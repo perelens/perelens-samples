@@ -1,0 +1,63 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>perelens-samples</groupId>
+	<artifactId>perelens-samples</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>perelens samples</name>
+	<description>Sample code for perelens simulation framework.</description>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.version>3.11.0</maven.compiler.version>
+	</properties>
+
+	<developers>
+		<developer>
+			<name>Steve Branda</name>
+			<email>perelens@proton.me</email>
+			<organization>perelens</organization>
+			<organizationUrl>https://perelens.com</organizationUrl>
+		</developer>
+	</developers>
+
+	<scm>
+		<connection>scm:git:git://github.com/perelens/perelens-samples.git</connection>
+		<developerConnection>
+			scm:git:ssh://github.com/perelens/perelens-samples.git</developerConnection>
+		<url>https://github.com/perelens/perelens-samples/tree/main</url>
+	</scm>
+
+	<licenses>
+		<license>
+			<name>Apache-2.0</name>
+			<url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+			<comments>A business-friendly OSS license</comments>
+		</license>
+	</licenses>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${maven.compiler.version}</version>
+				<configuration>
+					<release>17</release>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.perelens</groupId>
+			<artifactId>perelens-complete</artifactId>
+			<version>1.0</version>
+			<type>pom</type>
+		</dependency>
+	</dependencies>
+
+</project>
